@@ -1,0 +1,226 @@
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+} */
+
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+::-webkit-scrollbar-button {
+  width: 2px;
+  height: 2px;
+}
+
+body {
+  /* background-image: linear-gradient(120deg, #63954b 0%, #a5bf36 100%); */
+  background-color: #264653;
+  color: white;
+  min-height: 100vh;
+  font-family: "Mansalva", cursive;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  display: block;
+}
+
+.login-form input,
+.container-button button {
+  width: 100%;
+  margin-right: 1%;
+}
+
+button {
+  border: none;
+  /* padding: 5px;
+  border-radius: 5px; */
+}
+
+input,
+button {
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+button:hover {
+  background: #51c6b2;
+  color: white;
+}
+
+img {
+  padding: 1%;
+  width: 200px;
+  height: 150px;
+}
+
+.container {
+  text-align: left;
+  position: relative;
+}
+
+.foodpacked-header {
+  color: white;
+  font-family: "Fredoka One", cursive;
+  font-size: 2rem;
+  letter-spacing: 4px;
+  /* -webkit-text-stroke: 1px #eed9c3; */
+}
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-button {
+  display: flex;
+  width: auto;
+  justify-content: center;
+  flex-direction: row;
+  /* display flex overwrites the text align */
+}
+
+.container-button > * {
+  min-width: 20vw;
+  max-width: 40vw;
+}
+
+.login-tagline {
+  margin-top: 5%;
+  font-size: 4rem;
+}
+
+.login-form {
+  color: black;
+  border: none;
+  margin: 1%;
+  width: 90%;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.upload-container {
+  text-align: center;
+}
+
+.upload-container input {
+  text-align: left;
+}
+/* 
+.login .to-top {
+  -webkit-appearance: button;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.to-top a:hover,
+.to-top a:focus {
+  text-decoration: none;
+}
+
+/* .active {
+  opacity: 0;
+} */
+
+.banner {
+  text-align: left;
+  background: #1b9983;
+  color: white;
+  padding: 10px;
+  /* would be good if can make width auto */
+  width: auto;
+  display: block;
+}
+
+.title {
+  margin-top: 5%;
+}
+
+.shops {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.shops a {
+  width: 205px;
+  height: auto;
+  /* find a way to break line and continue text on next line */
+  background: #eed9c3;
+  color: black;
+  display: inline-block;
+  padding: 0.5%;
+  text-decoration: none;
+  margin-right: 10px;
+  overflow: auto;
+}
+
+.shops a:hover {
+  color: #a47f5d;
+}
+
+.shops h2,
+h3 {
+  hyphens: auto;
+  overflow: auto;
+  padding: 2%;
+}
+
+.shops p {
+  text-align: right;
+  font-style: italic bold;
+  font-size: 1.3rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.trash {
+  top: 0px;
+  right: 0px;
+  font-size: 1.6rem;
+  position: absolute;
+  padding: 5px;
+  border-radius: 5px;
+  margin-right: 3%;
+}
+
+.trash:hover {
+  color: white;
+  background: #51c6b2;
+}
+
+.counter {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+#notfound-container {
+  vertical-align: middle;
+  text-align: center;
+  padding: 2%;
+  background: #51c6b2;
+  font-size: 2rem;
+  margin: 5%;
+  /* figure out how to center vertically */
+}
+
+.logout {
+  top: 1.5%;
+  right: 1.5%;
+  position: absolute;
+}
